@@ -5,5 +5,7 @@ spring:
     nacos:
       config:
         server-addr: 120.27.251.210:8848
+  profiles:
+    active: DEV
 server:
   port: 9003
