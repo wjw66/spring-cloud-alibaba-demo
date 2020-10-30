@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: alibaba-sentinel-datasource-nacos
+  cloud:
+    # sentinel dashboard
+    sentinel:
+      transport:
+        dashboard: localhost:8080  #sentinel dashboard的访问地址
+      datasource:
+        ds:
+          nacos:
+            server-addr: 120.27.251.210:8848 # nacos的访问地址
+            dataId: ${spring.application.name}-sentinel #nacos中存储规则的dataId
+            groupId: DEFAULT_GROUP #nacos中存储规则的groupId
+            rule-type: flow  #该参数是spring cloud alibaba升级到0.2.2之后增加的配置，用来定义存储的规则类型。
+server:
+  port: 9004
