@@ -1,5 +1,6 @@
 package wjw.entity;
 
+import lombok.Data;
 import org.springframework.cloud.alibaba.sentinel.datasource.config.AbstractDataSourceProperties;
 
 /**
@@ -7,6 +8,7 @@ import org.springframework.cloud.alibaba.sentinel.datasource.config.AbstractData
  * @version : 1.0
  * @date : 2020/10/30 15:55
  **/
+@Data
 public class NacosDataSourceProperties extends AbstractDataSourceProperties {
     private String serverAddr;
     private String groupId;

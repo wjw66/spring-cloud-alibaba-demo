@@ -13,6 +13,7 @@
         <module>alibaba-nacos-discovery-client</module>
         <module>alibaba-nacos-config-client</module>
         <module>alibaba-sentinel</module>
+        <module>alibaba-rocketmq</module>
     </modules>
 
     <parent>
